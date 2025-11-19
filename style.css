@@ -34,3 +34,7 @@ h1{
     font-size: 100px;
     text-shadow: 0 0 8px lightskyblue;
 }
+
+img{
+    padding: 20px;
+}
