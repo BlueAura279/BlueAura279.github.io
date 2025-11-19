@@ -1,0 +1,36 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: linear-gradient(blue, darkgrey);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.border{
+    border-style: solid;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: aliceblue;
+}
+
+.parent-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+    font-size: 100px;
+    text-shadow: 0 0 8px lightskyblue;
+}
