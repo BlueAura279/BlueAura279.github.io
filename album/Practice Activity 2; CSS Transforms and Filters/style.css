@@ -1,0 +1,87 @@
+#grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 110px 400px 400px 110px;
+
+    grid-template-areas: 
+    "head head head"
+    "aside content1 content1"
+    "aside content2 content3"
+    "foot foot foot";
+}
+
+#grid-container > header, aside, #content-1, #content-2, #content-3, footer{
+    text-align: center;
+    border: 5px solid black;
+    padding: 5px;
+    justify-content: stretch;
+}
+
+header{
+    grid-area: head;
+    background-color:cornflowerblue;
+    font-size: 60px;
+    font-weight: bold;
+
+    -webkit-text-stroke: 2px white;
+    animation-name: rgbColors;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rgbColors {
+    0% {-webkit-text-stroke: 2px red}
+    14% {-webkit-text-stroke: 2px orange}
+    28% {-webkit-text-stroke: 2px yellow}
+    42% {-webkit-text-stroke: 2px green}
+    56% {-webkit-text-stroke: 2px cyan}
+    70% {-webkit-text-stroke: 2px blue}
+    84% {-webkit-text-stroke: 2px violet}
+    100% {-webkit-text-stroke: 2px red}
+    
+}
+
+aside{
+    grid-area: aside;
+    background-color: cyan;
+    font-size: 22px;
+    padding: 20px;
+    text-align: start;
+}
+
+#content-1{
+    grid-area: content1;
+    background-color: lightblue;
+}
+
+#content-2{
+    grid-area: content2;
+    background-color: lightblue;
+}
+
+#content-3{
+    grid-area: content3;
+    background-color: lightblue;
+}
+
+footer{
+    grid-area: foot;
+    background-color: blue;
+    font-size: 23px;
+}
+
+img{
+    width: 250px;
+    transform: scale(2, 2) translate(0px, 60px);
+}
+
+#content-2 > img{
+    filter: contrast(150%);
+}
+
+#content-3 >img{
+    filter: grayscale(50%);
+}

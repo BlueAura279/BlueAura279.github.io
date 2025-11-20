@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(126, 128, 219);
+    
+}
+
+h1, h2, h3{
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+div{
+    border-style: solid;
+    border-color: darkgray;
+}
+
+#fancy_style{
+    background-color: white;
+    color: darkslateblue;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 25px;
+}
