@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Gaming PC Guide: Q&A + Contact</title>
+    
+    <!-- Bootstrap CSS file/link referance -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- My personal CSS file (custom design) -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark customBackground">
+        <!-- Either a menu or hyperlinks connecting each of your pages (navigation bar). -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jack's Gaming PC Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="whyAGamingPC.html">Why a Gaming PC?</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="specs.html">Specifications in a Gaming PC</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="otherAlternatives.html">Other Gaming Alternatives</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="Q&A+Contact.html">Q&A + Contact</a>
+                </li>                
+            </ul>
+            <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="outline_around_textH1">Commonly Asked Questions (Q&A)</h1>
+
+    <h2>Where should I look for a Gaming PC?</h2>
+    <P class="page_text">Overall, I would recommend going to a store (mostly Best Buy) during big sales and seeing what they have. If you would like to go the extra step and be prepared for what you want, I would recommend looking into what graphics card you want as well as how much storage (Ram & SSD) you want.</P>
+
+    <h2>What PC brands should I look at?</h2>
+    <p class="page_text">I personally like ASUS, haven't had any problems with them and the software that comes with the PC to manage the PC I have really liked. IBUYPOWER and Cosair are good contenders as well!</p>
+
+
+    <!-- Simple Javascript/calculator that calculates How much you shoud save per month based on [PC Price / # of months you want it to take] -->
+    <div class="box">
+        <h3 class="outline_around_textH3">Check out this PC Budget Calculator!</h3>
+        <p class="page_text">It Calculates: How much you should save per month based on Total PC price and the number of months. In the first box input total cost of the PC and in the second box, input the number of months you want it to take in to reach the budget.</p>
+        <div>
+            <input type="number" id="totalCostofPC" class="input-section" placeholder="Total PC cost"></input>
+            <input type="number" id="numberOfMonths" class="input-section" placeholder="Number of months"></input>
+            <button class="btn btn-info input-section" onclick="budgetPCCalculator();" >Click here to calculate budget!</button>
+        </div>
+        <br>
+        <p class="text-center" id="resultMessage">Your budget will appear here!</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- A contact form that displays a message when submitted  -->
+    <div class="container">
+        <div class="row mt-4">
+            <h2>Got specific questions or concerns?</h2>
+            <h3>Contact me through this form! I will try to respond as soon as I can!</h3>
+            <div class="col-md-5 mt-5">
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">I'll never share your name with anyone else.</div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your name.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your email.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea name="message" class="form-control" id="" required></textarea>
+                        <div class="invalid-feedback">
+                            Message cannot be blank.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-7 mt-5">
+                <img src="Contact Form Image.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    
+
+
+    <footer class="py-4 text-white customBackground2">
+        <!-- An HTML footer with fixed positioning on each page -->
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back To Top</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </p>
+            <p class="mb-1">All Copyrighted &copy; pictures and bootstraps, as well as any info, are for internal, educational, and non commercial use.</p>
+            <p class="mb-0">Created by: Jack C. Werner - PennState World Campus - IST 250: Intro to Web Design</p>
+        </div>
+    </footer>
+
+    <!-- My Javascript -->
+    <script src="javascript.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
